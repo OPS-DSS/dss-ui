@@ -1,26 +1,75 @@
 {
-  "name": "@repo/ui",
-  "version": "0.0.0",
-  "private": true,
-  "exports": {
-    "./*": "./src/*.tsx"
+  "name": "@ops-dss/ui",
+  "version": "0.0.1",
+  "type": "module",
+  "private": false,
+  "description": "DSS Health Indicators React UI Components Library",
+  "author": "OPS/PAHO",
+  "license": "MIT",
+  "homepage": "https://github.com/ops-dss/dss-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ops-dss/dss-ui.git"
   },
+  "bugs": {
+    "url": "https://github.com/ops-dss/dss-ui/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./button": {
+      "import": "./dist/button.js",
+      "types": "./dist/button.d.ts"
+    },
+    "./card": {
+      "import": "./dist/card.js",
+      "types": "./dist/card.d.ts"
+    },
+    "./code": {
+      "import": "./dist/code.js",
+      "types": "./dist/code.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
+    "build": "tsc --jsx react-jsx",
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
     "eslint": "^9.34.0",
     "typescript": "5.9.2"
   },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
   }
 }
