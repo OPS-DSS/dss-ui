@@ -36,6 +36,10 @@
     "./code": {
       "import": "./dist/code.js",
       "types": "./dist/code.d.ts"
+    },
+    "./select": {
+      "import": "./dist/select.js",
+      "types": "./dist/select.d.ts"
     }
   },
   "files": [
@@ -45,6 +49,7 @@
   ],
   "scripts": {
     "build": "tsc --jsx react-jsx",
+    "dev": "tsc --jsx react-jsx --watch",
     "lint": "eslint . --max-warnings 0",
     "prepack": "npm run build"
   },
