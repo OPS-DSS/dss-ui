@@ -9,10 +9,10 @@
   "homepage": "https://github.com/ops-dss/dss-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ops-dss/dss-ui.git"
+    "url": "https://github.com/OPS-DSS/dss-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/ops-dss/dss-ui/issues"
+    "url": "https://github.com/OPS-DSS/dss-ui/issues"
   },
   "publishConfig": {
     "access": "public",
@@ -46,14 +46,14 @@
   "scripts": {
     "build": "tsc --jsx react-jsx",
     "lint": "eslint . --max-warnings 0",
-    "check-types": "tsc --noEmit",
     "prepack": "npm run build"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "@ops-dss/typescript-config": "latest",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
