@@ -35,7 +35,7 @@ export function Select({
           htmlFor={selectId}
           style={{
             display: "block",
-            marginBottom: "0.5rem",
+            marginBottom: "0.4rem",
             fontWeight: "500",
             fontSize: "0.875rem",
           }}
