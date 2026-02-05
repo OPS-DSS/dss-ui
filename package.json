@@ -25,11 +25,11 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./react/button": {
+    "./button": {
       "import": "./dist/button.js",
       "types": "./dist/button.d.ts"
     },
-    "./react/select": {
+    "./select": {
       "import": "./dist/select.js",
       "types": "./dist/select.d.ts"
     }
