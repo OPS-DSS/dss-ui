@@ -134,6 +134,7 @@ export function Select<T extends string = string>({
         defaultValue={defaultValue}
         onValueChange={(newValue) => {
           onValueChange?.(newValue as T)
+          console.log('Selected value:', newValue)
         }}
         disabled={disabled}
         required={required}
