@@ -1,5 +1,3 @@
-'use client'
-
 import * as React from 'react'
 import { Select as BaseSelect } from '@base-ui/react/select'
 import { Field } from '@base-ui/react/field'
