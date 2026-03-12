@@ -29,14 +29,6 @@
       "import": "./dist/button.js",
       "types": "./dist/button.d.ts"
     },
-    "./card": {
-      "import": "./dist/card.js",
-      "types": "./dist/card.d.ts"
-    },
-    "./code": {
-      "import": "./dist/code.js",
-      "types": "./dist/code.d.ts"
-    },
     "./select": {
       "import": "./dist/select.js",
       "types": "./dist/select.d.ts"
@@ -54,10 +46,12 @@
     "prepack": "npm run build"
   },
   "dependencies": {
+    "@base-ui/react": "^1.1.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "@iconify/react": "^6.0.2",
     "@ops-dss/typescript-config": "latest",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
